@@ -1,7 +1,6 @@
 #include <iostream>
 
 int main() {
-
   double longitud;
   const int kPrecioMetro{1624};
 

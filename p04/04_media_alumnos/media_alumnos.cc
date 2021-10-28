@@ -1,7 +1,6 @@
 #include <iostream>
 
 int main() {
-
   double nota, media, sum;
 
   std:: cout << "Vamos a calcular la nota media entre 3 alumnos." << std::endl;

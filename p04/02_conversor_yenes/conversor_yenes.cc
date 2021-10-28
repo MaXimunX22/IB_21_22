@@ -1,7 +1,6 @@
 #include <iostream>
 
 int main() {
-
   double euros;
   const double kYenes{0.0075};
 
