@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-  double total;
+  double total{0};
   int cantidad;
 
   std::cout << "Vamos a contar cuanto dinero tienes." << std::endl;
