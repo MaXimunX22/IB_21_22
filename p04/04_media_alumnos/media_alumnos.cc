@@ -2,9 +2,7 @@
 
 int main() {
   double nota, media, sum;
-
   std:: cout << "Vamos a calcular la nota media entre 3 alumnos." << std::endl;
-
   for (int i = 0; i < 3; i++) {
     std::cout << "Introduce la nota de el/la alumno/a " << i + 1 << ": ";
     std::cin >> nota;
@@ -15,9 +13,7 @@ int main() {
       i--;
     }
   }
-
-  media = sum/3;
+  media = sum / 3;
   std::cout << "La media de los 3 alumons es: " << media << std::endl;
-
   return 0;
 }
