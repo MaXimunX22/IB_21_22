@@ -1,7 +1,6 @@
 #include <iostream>
 
 int main() {
-
   std::cout << "Este programa te dice el tamaño que utiliza el compilador para almacenar cada uno de los tipos básicos del lenguaje" << std::endl;
   std::cout << "\nEl tipo de datos bool se representa utilizando " << sizeof(bool) << " bytes." << std::endl;
   std::cout << "\nEl tipo de datos short se representa utilizando " << sizeof(short) << " bytes." << std::endl;

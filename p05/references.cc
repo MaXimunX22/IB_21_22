@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-  int a {0};
+  int a{0};
   bool b = true;
   double c(2.4);
   float d{3.54213};
