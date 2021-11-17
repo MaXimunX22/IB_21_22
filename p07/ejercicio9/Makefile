@@ -1,6 +1,6 @@
 CXX = g++
 CXX_Flags = -g -Wall
-TARGET = collatz
+TARGET = count_a
 
 $(TARGET): $(TARGET).cc
 	$(CXX) $(CXX_Flags) -o $(TARGET) $(TARGET).cc

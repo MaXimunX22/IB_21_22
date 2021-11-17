@@ -1,6 +1,6 @@
 CXX = g++
 CXX_Flags = -g -Wall
-TARGET = collatz
+TARGET = max_of_three
 
 $(TARGET): $(TARGET).cc
 	$(CXX) $(CXX_Flags) -o $(TARGET) $(TARGET).cc
