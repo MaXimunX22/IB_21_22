@@ -30,6 +30,9 @@ int main() {
 void AddSecond(int hours, int minutes, int seconds) {
   const int kSixty{60};
   const int kTwentyfour{24};
+  const int kTen{10};
+  const int kTwo{2};
+  const int kThree{3};
   ++seconds;
   if (seconds == kSixty) {
     seconds = 0;
@@ -43,12 +46,12 @@ void AddSecond(int hours, int minutes, int seconds) {
     }
   }
   int time_array[3] = {hours, minutes, seconds};
-  for (int i{0}; i < 3; ++i) {
-    if (time_array[i] < 10 && i < 2) {
+  for (int i{0}; i < kThree; ++i) {
+    if (time_array[i] < kTen && i < kTwo) {
       std::cout << "0" << time_array[i] << ":";
-    } else if (time_array[i] < 10 && i == 2) {
+    } else if (time_array[i] < kTen && i == kTwo) {
       std::cout << "0" << time_array[i];
-    } else if (i < 2) {
+    } else if (i < kTwo) {
       std::cout << time_array[i] << ":";
     } else {
       std::cout << time_array[i];

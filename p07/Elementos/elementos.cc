@@ -26,31 +26,34 @@ int main() {
 }
 
 void Elementos(char option_a, char option_b) {
+  const char char_A{'A'};
+  const char char_V{'V'};
+  const char char_P{'P'};
   switch (option_a) {
     case 'A':
-      if (option_b == 'A') {
+      if (option_b == char_A) {
         std::cout << "-" << std::endl;
-      } else if (option_b == 'V') {
+      } else if (option_b == char_V) {
         std::cout << "2" << std::endl;
-      } else if (option_b == 'P') {
+      } else if (option_b == char_P) {
         std::cout << "1" << std::endl;
       }
       break;
     case 'V':
-      if (option_b == 'A') {
+      if (option_b == char_A) {
         std::cout << "1" << std::endl;
-      } else if (option_b == 'V') {
+      } else if (option_b == char_V) {
         std::cout << "-" << std::endl;
-      } else if (option_b == 'P') {
+      } else if (option_b == char_P) {
         std::cout << "2" << std::endl;
       }
       break;
     case 'P':
-      if (option_b == 'A') {
+      if (option_b == char_A) {
         std::cout << "2" << std::endl;
-      } else if (option_b == 'V') {
+      } else if (option_b == char_V) {
         std::cout << "1" << std::endl;
-      } else if (option_b == 'P') {
+      } else if (option_b == char_P) {
         std::cout << "-" << std::endl;
       }
       break;

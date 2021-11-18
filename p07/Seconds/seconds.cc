@@ -7,7 +7,7 @@
  * @file seconds.cc
  * @author alu0101434698@ull.es
  * @date Nov 17 2021
- * @brief The program converts to seconds a given amount of years, days, hours, 
+ * @brief The program converts to seconds a given amount of years, days, hours,
  *        minutes and seconds.
  * @bug There are no known bugs
  * @see https://jutge.org/problems/P70955
@@ -31,9 +31,14 @@ int main() {
 }
 
 int HowManySeconds(int years, int days, int hours, int minutes, int seconds) {
+  const int seconds_per_minute{60};
+  const int seconds_per_hours{3600};
+  const int seconds_per_day{86400};
+  const int seconds_per_year{31536000};
   int total_seconds{0};
-  total_seconds = seconds + (60 * minutes) + (3600 * hours) + (86400 * days) +
-                  (365 * 86400 * years);
+  total_seconds = seconds + (seconds_per_minute * minutes) +
+                  (seconds_per_hours * hours) + (seconds_per_day * days) +
+                  (seconds_per_year * years);
 
   return total_seconds;
 }

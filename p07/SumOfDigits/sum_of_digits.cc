@@ -33,10 +33,12 @@ int main() {
 }
 
 int SumOfDigits(int inserted_number) {
+  const int kTen{10};
+  const int kZero{0};
   int result{0};
-  while (inserted_number > 0) {
-    result += inserted_number % 10;
-    inserted_number = inserted_number / 10;
+  while (inserted_number > kZero) {
+    result += inserted_number % kTen;
+    inserted_number = inserted_number / kTen;
   }
 
   return result;

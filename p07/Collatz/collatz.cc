@@ -27,16 +27,22 @@ int main() {
       std::cout << Collatz(inserted_number) << std::endl;
     }
   }
+
+  return 0;
 }
 
 int Collatz(int inserted_number) {
+  const int kOne{1};
+  const int kTwo{2};
+  const int kThree{3};
+  const int kZero{0};
   int counter{0};
-  while (inserted_number != 1) {
-    if (inserted_number % 2 == 0) {
-      inserted_number = inserted_number / 2;
+  while (inserted_number != kOne) {
+    if (inserted_number % kTwo == kZero) {
+      inserted_number = inserted_number / kTwo;
       ++counter;
     } else {
-      inserted_number = (inserted_number * 3) + 1;
+      inserted_number = (inserted_number * kThree) + kOne;
       ++counter;
     }
   }
