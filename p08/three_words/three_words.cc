@@ -5,7 +5,7 @@
  * Informática Básica 2021-2022
  *
  * @file three_words.cc
- * @author alu0101434698@ull.es
+ * @author Edgar Joel Martín Melián
  * @date Nov 17 2021
  * @brief The program reads three words a, b and c, and prints a line with c, b 
  *        and a in this order.
