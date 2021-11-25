@@ -16,6 +16,12 @@
 #include <iomanip>
 #include <iostream>
 
+/**
+ * @brief Calculate the Factorial of n number
+ * 
+ * @param number 
+ * @return double 
+ */
 double Factorial(int number) {
   double factorial{1.00};
   for (double i{1.00}; i <= number; ++i) {
@@ -24,6 +30,12 @@ double Factorial(int number) {
   return factorial;
 }
 
+/**
+ * @brief Calculate the Aproximation to the number E with the formula 
+ * 
+ * @param inserted_terms 
+ * @return double 
+ */
 double AproximationE(int inserted_terms) {
   const double kOne{1.00};
   double number_e{0.00};
