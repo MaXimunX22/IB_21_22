@@ -16,6 +16,8 @@
 #include <cmath>
 
 void PrintDivisors(int inserted_number) {
+  const int kZero{0};
+  const int kOne{1};
   int divisor_medium{0};
   for (int i{1}; i <= sqrt(inserted_number); ++ i){
     if (inserted_number % i == 0) {
@@ -24,8 +26,8 @@ void PrintDivisors(int inserted_number) {
     divisor_medium = i;
   }
   int divisor_big{0};
-  for (int i{divisor_medium}; i >= 1; --i) {
-    if (inserted_number % i == 0) {
+  for (int i{divisor_medium}; i >= kOne; --i) {
+    if (inserted_number % i == kZero) {
       divisor_big = inserted_number / i;
       if (divisor_big > divisor_medium) {
         std::cout << " " << divisor_big;
@@ -35,8 +37,7 @@ void PrintDivisors(int inserted_number) {
 }
 
 int main() {
-  int inserted_number{0};
-  int numero_maximo{200};
+  int inserted_number;
   while (std::cin >> inserted_number) {
       std::cout << "divisors of " << inserted_number  << ":";
       PrintDivisors(inserted_number);
