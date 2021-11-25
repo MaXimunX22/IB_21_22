@@ -14,21 +14,18 @@
 
 #include <iostream>
 
-void ThreeWords(std::string inserted_word_1, std::string inserted_word_2,
-                std::string inserted_word_3);
+void PrintThreeWords(std::string inserted_word_1, std::string inserted_word_2,
+                std::string inserted_word_3) {
+  std::cout << inserted_word_3 << " " << inserted_word_2 << " "
+            << inserted_word_1 << std::endl;
+}
 
 int main() {
   std::string inserted_word_1;
   std::string inserted_word_2;
   std::string inserted_word_3;
   std::cin >> inserted_word_1 >> inserted_word_2 >> inserted_word_3;
-  ThreeWords(inserted_word_1, inserted_word_2, inserted_word_3);
+  PrintThreeWords(inserted_word_1, inserted_word_2, inserted_word_3);
 
   return 0;
-}
-
-void ThreeWords(std::string inserted_word_1, std::string inserted_word_2,
-                std::string inserted_word_3) {
-  std::cout << inserted_word_3 << " " << inserted_word_2 << " "
-            << inserted_word_1 << std::endl;
 }
